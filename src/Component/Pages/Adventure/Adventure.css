@@ -15,8 +15,7 @@
   width: 447px;
   height: 397px;
   padding-top: 219px;
-  padding-left: 252px;
-  gap: 60px;
+  padding-left: 140px;
 }
 .cardOne {
   display: flex;
@@ -25,10 +24,10 @@
   gap: 15px;
 }
 
-.cardImage{
+.cardImage img{
     width: 80px;
     height: 80px;
 }
 .cardDetails{
-    padding-top:30px;
+    padding-top:20px;
 }

@@ -1,0 +1,22 @@
+.slider{
+    padding-left:135px;
+}
+.sliderOne{
+    padding-left:270px;
+}
+.sliderTwo{
+    padding-left:405px;
+}
+.sliderThree{
+    padding-left:540px;
+}
+.card{
+width:360px;
+height:495px;
+}
+
+.cardImageSlider{
+    width: 100%;
+    height: 327px;
+    border-radius: 20px;
+}
