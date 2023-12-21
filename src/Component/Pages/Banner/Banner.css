@@ -1,0 +1,56 @@
+.BannerMain{
+  display: flex;
+  width: 94.5rem;
+  height: 60.563rem;
+  background: #F8F1D340;
+
+}
+.bannerLeftSideBox {
+  width: 39.75rem;
+  height: 32.563rem;
+  margin-top: 15.063rem;
+  margin-left: 7.438rem;
+  gap: 3.125rem;
+}
+
+.imeClass {
+  width: 33.813rem;
+  height: 46.063rem;
+  padding-left: 5.625rem;
+  margin-top: 2.375rem;
+}
+.BannerButton{
+  width: 10.313rem;
+  height:3.188rem;
+  color: white;
+  background:#F27A44;
+  border-radius: 1.875rem;
+  gap: 1.25rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1050px) {
+    
+  }
+  
+  @media screen and (max-width: 700px) {
+    .hero{
+        background: none;
+    }
+    .bannerLeftSideBox{
+        padding-left: 5rem;
+    }
+    
+  }
+  
+  @media screen and (max-width: 550px) {
+    .hero{
+        background: none;
+    }
+    .bannerLeftSideBox{
+        padding-left: 5rem;
+
+    }
+    
+  }
+  

@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  width: 68.188rem;
+  height: 68.188rem;
+  margin-top: 3rem;
+  margin-left: 15rem;
+}
+
+.mainLeftSide {
+  width: 360px;
+  height: 490px;
+  padding-top: 168px;
+}
+.mainRightSide {
+  width: 447px;
+  height: 397px;
+  padding-top: 219px;
+  padding-left: 252px;
+  gap: 60px;
+}
+.cardOne {
+  display: flex;
+  width: 360px;
+  height: 130px;
+  gap: 15px;
+}
+
+.cardImage{
+    width: 80px;
+    height: 80px;
+}
+.cardDetails{
+    padding-top:30px;
+}

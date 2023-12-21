@@ -1,58 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import './Navbar.css'
+import "./Navbar.css";
+import { FaBars } from "react-icons/fa";
+import { RiCloseLine } from "react-icons/ri";
+
+const NavMenu = () => (
+  <>
+    <li>
+      <Link to="/about">Home</Link>
+    </li>
+    <li>
+      <Link to="/services">About</Link>
+    </li>
+    <li>
+      <Link to="/contact">Services</Link>
+    </li>
+    <li>
+      <Link to="/contact">Membership</Link>
+    </li>
+    <li>
+      <Link to="/contact">Pricing</Link>
+    </li>
+  </>
+);
 
 const Navbar = () => {
-  const navitem = (
-    <>
-      <li><Link>Home</Link></li>
-      <li><Link>About</Link></li>
-      <li><Link>Schedules</Link></li>
-      <li><Link>Membership</Link></li>
-      <li><Link>Pricing</Link></li>
-
-    </>
-  );
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="navbar bg-base-100">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+    <div className="container">
+      <div className="navMain">
+      <div className="nav-menu">
+        {toggleMenu ? (
+          <RiCloseLine onClick={() => setToggleMenu(false)} />
+        ) : (
+          <FaBars onClick={() => setToggleMenu(true)} />
+        )}
+        {toggleMenu && (
+          <div className="nav-menu-wrapper">
+            <div className="nav-menu-wrapper">
+              <NavMenu />
+            </div>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            {navitem}
-          </ul>
-        </div>
+        )}
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {navitem}
+      <div>
+        <ul className="navUl">
+          <NavMenu />
         </ul>
       </div>
-      <div className="navbar-end gap-4">
-        <p1>Offers</p1>
-      <button className="navButton">
-        Course
-      </button>
+      <div className="navButtonMain">
+        <p>Offers</p>
+       <div>
+       <button className="navButton">Course</button>
+       </div>
       </div>
+    </div>
     </div>
   );
 };

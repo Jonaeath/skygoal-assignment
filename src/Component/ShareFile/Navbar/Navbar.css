@@ -1,9 +1,76 @@
-.navButton{
-    color: white;
-    background-color: #F27A44;
-    border-radius: 30px;
-    width: 127px;
-    height: 51px;
-    font-size: 16px;
-    font-weight: 400;
+/* General styles */
+.navMain {
+    display: flex;
+    justify-content: space-evenly;
+    width: 79.625rem;
+    height: 3.188rem;
+    margin-left: 7.438rem;
+    
+  }
+  
+.navButtonMain{
+  display: flex;
+  align-items: center;
+  width: 13.438rem;
+  height: 3.188rem;
+  margin-top: 0.125rem;
+  padding-left: 15.25rem;
+  gap:2.5rem;
 }
+
+.navButton{
+  width: 7.938rem;
+  height: 2.5rem;
+  color: white;
+  background:#F27A44;
+  border-radius: 1.875rem;
+  gap: 1rem;
+} 
+ 
+.navUl{
+  display: flex;
+  align-items: center;
+  width: 30.125rem;
+  height: 1.188rem;
+  margin-top: 19px;
+  padding-left: 1.188rem;
+  gap: 2.5rem;
+}
+
+
+/* Drop Down Menu */
+.nav-menu{
+  display: flex;
+  display: none;
+  align-items: center;
+}
+.nav-menu-wrapper{
+  padding-top: 3.438rem;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 1050px) {
+  .navUl{
+    display: none;
+  }
+  .nav-menu{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-menu{
+    display: flex;
+  }
+  .navButtonMain{
+    padding-left: 3.125rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-menu{
+    display: flex;
+  }
+}
+
