@@ -1,8 +1,7 @@
 .main {
   display: flex;
-  width: 68.188rem;
-  height: 68.188rem;
-  margin-top: 3rem;
+  width: 68rem;
+  height: 44rem;
   margin-left: 15rem;
 }
 
@@ -19,14 +18,38 @@
 }
 .cardOne {
   display: flex;
+  background-color: whitesmoke;
   width: 360px;
   height: 130px;
+  padding-top: 10px;
+  gap: 15px;
+}
+
+.cardTwo {
+  display: flex;
+  background-color: whitesmoke;
+  width: 360px;
+  height: 130px;
+  padding-top: 10px;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.cardThree {
+  display: flex;
+  background-color: whitesmoke;
+  width: 360px;
+  height: 130px;
+  padding-top: 10px;
+  margin-top: 15px;
   gap: 15px;
 }
 
 .cardImage img{
     width: 80px;
     height: 80px;
+    border-radius: 20px;
+    padding-left: 10px;
 }
 .cardDetails{
     padding-top:20px;

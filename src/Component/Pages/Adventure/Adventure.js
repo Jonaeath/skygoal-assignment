@@ -17,7 +17,7 @@ const Adventure = () => {
             </p>
           </div>
         </div>
-        <div className="cardOne">
+        <div className="cardTwo">
           <div className="cardImage">
             <img src={image01} alt="" />
           </div>
@@ -28,7 +28,7 @@ const Adventure = () => {
             </p>
           </div>
         </div>
-        <div className="cardOne">
+        <div className="cardThree">
           <div className="cardImage">
             <img src={image01} alt="" />
           </div>
